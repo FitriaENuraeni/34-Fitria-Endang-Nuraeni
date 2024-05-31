@@ -1,18 +1,18 @@
 @extends('layout.master')
 
 @section('title')
-Formulir Genre
+Formulir Author
 @endsection
 
 @section('content')
     <div class="card">
         <div class="card-body">
             <h5 class="card-title"></h5>
-            <form action="/admin/genre" method="POST">
+            <form action="/admin/author" method="POST">
                 @csrf
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Tulis nama genre disini!">
+                    <label for="name">Nama Author</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Tulis nama author disini!">
                 </div>
                 @error('name')
                     <div class="alert alert-danger">
@@ -26,4 +26,3 @@ Formulir Genre
         </div>
     </div>
 @endsection
-</div>
